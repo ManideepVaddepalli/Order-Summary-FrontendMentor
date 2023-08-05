@@ -1,0 +1,114 @@
+html{box-sizing: border-box;
+    font-size: 100%;}
+*,*::after,*::before{box-sizing: inherit;}
+body{
+    height: auto;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0px;
+}
+.bg{
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size: contain;
+}
+main{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0.125rem 0.625rem;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 23.437rem;
+}
+.image{
+    border-radius: 1.25rem 1.25rem 0px 0px;
+    width:23.437rem;
+    height:12.125rem;
+    background-image: url('images/illustration-hero.svg');
+}
+.botcard{
+    justify-content: center;
+    margin:1.25rem 1.875rem 1.25rem 1.875rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botcard h2{
+    color: hsl(223, 47%, 23%);
+    margin:1.25rem 0px 0.625rem 0px;
+}
+.botcard p1{
+    color:hsl(224, 23%, 55%);
+    margin: 0.312rem 0.937rem 0.625rem 0.937rem;
+    text-align: center;
+}
+.plan{
+    width:16.875rem;
+    margin:0px 0px 1.25rem 0px;
+    display: flex;
+    align-items: center;
+}
+.plan svg{
+    flex-grow: 1;
+}
+.annualplan{
+    flex-grow: 3;
+    color:hsl(223, 47%, 23%);
+    display: flex;
+    flex-direction: column;
+}
+.annualplan span{
+    color: hsl(224, 23%, 55%);
+    margin:0.3125rem 0px 0px 0px;
+}
+.change{
+    color:hsl(245, 75%, 52%);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.change:hover{
+    color:  hsla(245, 75%, 52%,0.75);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.botcard button{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    margin:0.625rem 0px 1.25rem 0px;
+    border-radius: 0.625rem;
+    border: 0px;
+    width:18.75rem;
+    height:2.5rem;
+    color:white;
+    background-color: hsl(245, 75%, 52%);
+    transition: 0.3s;
+}
+.botcard button:hover{
+    cursor: pointer;
+    background-color:  hsla(245, 75%, 52%,0.75);
+
+}
+.botcard p2{
+    color:hsl(224, 23%, 55%);
+    font-size:0.9rem;
+    font-weight: 700;
+    margin:0.3125rem 0px 0.9375rem 0px;
+    transition: 0.3s;
+}
+.botcard p2:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+@media (min-width:767px) {
+    .bg{background-image: url('images/pattern-background-desktop.svg');}
+}
+
+
